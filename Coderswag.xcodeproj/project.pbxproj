@@ -17,6 +17,7 @@
 		3AC69D60205D77B00069152B /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC69D5F205D77B00069152B /* DataService.swift */; };
 		3AC69D62205D81D00069152B /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC69D61205D81D00069152B /* ProductCell.swift */; };
 		3AC69D64205D82840069152B /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC69D63205D82840069152B /* Product.swift */; };
+		3AC69D66205DAD030069152B /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC69D65205DAD030069152B /* ProductsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		3AC69D5F205D77B00069152B /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		3AC69D61205D81D00069152B /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		3AC69D63205D82840069152B /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		3AC69D65205DAD030069152B /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				3AC69D47205D71180069152B /* CategoryViewController.swift */,
+				3AC69D65205DAD030069152B /* ProductsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 			files = (
 				3AC69D48205D71180069152B /* CategoryViewController.swift in Sources */,
 				3AC69D46205D71180069152B /* AppDelegate.swift in Sources */,
+				3AC69D66205DAD030069152B /* ProductsViewController.swift in Sources */,
 				3AC69D5B205D74A80069152B /* CategoryCell.swift in Sources */,
 				3AC69D62205D81D00069152B /* ProductCell.swift in Sources */,
 				3AC69D5D205D76330069152B /* Category.swift in Sources */,

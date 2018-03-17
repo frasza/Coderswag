@@ -87,7 +87,7 @@
                     <navigationItem key="navigationItem" title="CODERSWAG" id="nlq-YI-8r5"/>
                     <connections>
                         <outlet property="categoryTable" destination="bkA-72-2xh" id="kP0-5X-75d"/>
-                        <segue destination="SFF-zG-5wr" kind="show" id="MeE-em-f5T"/>
+                        <segue destination="SFF-zG-5wr" kind="show" identifier="goToProducts" id="MeE-em-f5T"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -97,7 +97,7 @@
         <!--CODERSWAG-->
         <scene sceneID="maF-Fy-Wh7">
             <objects>
-                <viewController id="SFF-zG-5wr" sceneMemberID="viewController">
+                <viewController id="SFF-zG-5wr" customClass="ProductsViewController" customModule="Coderswag" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JMT-Eb-pJe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -118,7 +118,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="8Em-z2-rX3" customClass="ProductCell" customModule="Coderswag" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductCell" id="8Em-z2-rX3" customClass="ProductCell" customModule="Coderswag" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="176" height="279"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -167,6 +167,10 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="SFF-zG-5wr" id="JHQ-lE-w3N"/>
+                                    <outlet property="delegate" destination="SFF-zG-5wr" id="8v4-7a-1h4"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -181,6 +185,9 @@
                         <viewLayoutGuide key="safeArea" id="bde-rM-IAT"/>
                     </view>
                     <navigationItem key="navigationItem" title="CODERSWAG" id="5Lz-Fe-1ma"/>
+                    <connections>
+                        <outlet property="productsCollection" destination="Jc5-pA-uG1" id="STx-sW-TmZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ehX-DL-fMa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
